@@ -20,8 +20,9 @@ def first_challenge
         if key == :favorite_icecream_flavors
           value.each do |data|
             data.each do |flavor| 
-              flavor == "strawberry"
-              flavor.delete
+              if flavor == "strawberry"
+                flavor.delete
+              end
             end 
           end
         end
